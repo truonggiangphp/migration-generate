@@ -1,0 +1,41 @@
+{
+	"name": "webikevn/migration-generate",
+	"description": "Generates Laravel Migrations from an existing database",
+	"keywords": ["laravel", "lumen", "migration", "generator", "migrations", "artisan"],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Nguyen Giang",
+			"email": "nguyen.giang@rivercrane.vn"
+		}
+	],
+	"require": {
+		"php": ">=7.3.*",
+		"illuminate/support": "^5.6|^6.0|^7.0",
+		"doctrine/dbal": "~2.4"
+	},
+    "require-dev": {
+        "orchestra/testbench": "^3.6|^4.0|^5.0",
+        "squizlabs/php_codesniffer": "^3.5",
+		"mockery/mockery": "^1.0"
+    },
+	"autoload": {
+		"psr-4": {
+            "Webike\\MigrationsGenerator\\": "src/Webike/MigrationsGenerator",
+			"Xethron\\MigrationsGenerator\\": "src/Xethron/MigrationsGenerator",
+			"Way\\Generators\\": "src/Way/Generators"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Tests\\": "tests/"
+		}
+	},
+	"extra": {
+		"laravel": {
+			"providers": [
+				"Webike\\MigrationsGenerator\\MigrationsGeneratorServiceProvider"
+			]
+		}
+	}
+}
