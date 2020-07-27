@@ -2,7 +2,7 @@
 
 Generate Laravel Migrations from an existing database, including indexes and foreign keys!
 
-## V4 Changes
+##News
 
 1. Major rewrite on `FieldGenerator` and `IndexGenerator`.
 1. Fixed miscellaneous bugs.
@@ -47,14 +47,6 @@ Laravel will automatically register service provider for you.
 
 Auto discovery is not available in Lumen, you need some modification on `bootstrap/app.php`
 
-#### Enable facade
-
-Uncomment the following line
-
-```
-$app->withFacades();
-```
-
 #### Register provider
 
 Add following line
@@ -87,15 +79,13 @@ Run `php artisan help migrate:generate` for a list of options.
 
 ## Thank You
 
-Thanks to Bernhard Breytenbach for his great work. This package is cloned from https://github.com/Xethron/migrations-generator
+This package is cloned from https://github.com/Xethron/migrations-generator
 
 Thanks to Jeffrey Way for his amazing Laravel-4-Generators package. This package depends greatly on his work.
 
 ## Contributors
 
-Kit Loong
-
-Bernhard Breytenbach ([@BBreyten](https://twitter.com/BBreyten))
+Nguyen Giang (https://www.facebook.com/truonggiang.gk)
 
 ## License
 
